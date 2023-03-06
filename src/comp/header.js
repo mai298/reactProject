@@ -1,5 +1,6 @@
 import React from 'react';
-
+import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 const Header = () => {
   return (
     <>
@@ -7,10 +8,10 @@ const Header = () => {
     <h1>Courses 4 Arab</h1>
     <ul className="flex">
       <li className="main-list">
-        <a className="main-link" href="/html">
+        <Link className="main-link" to="/html">
           {" "}
           HTML{" "}
-        </a>
+        </Link>
         <ul className="sub-ul">
           <li>
             <a href="">Full Course</a>
@@ -24,10 +25,10 @@ const Header = () => {
         </ul>
       </li>
       <li className="main-list">
-        <a className="main-link" href="/css">
+        <Link className="main-link" to="/css">
           {" "}
           CSS{" "}
-        </a>
+        </Link>
         <ul className="sub-ul">
           <li>
             <a href="">Full Course</a>
@@ -52,10 +53,10 @@ const Header = () => {
         </ul>
       </li>
       <li className="main-list">
-        <a className="main-link" href="/javascript">
+        <Link className="main-link" to="/javascript">
           {" "}
           JavaScript{" "}
-        </a>
+        </Link>
         <ul className="sub-ul sub-of-js">
           <li>
             <a href="">coming soon🔥</a>
